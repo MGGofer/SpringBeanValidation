@@ -16,7 +16,7 @@ public class MainController {
 
     @Autowired
     public MainController(@NotNull MainService mainService) {
-//        Validate.notNull(mainService);
+        Validate.notNull(mainService);
         if(mainService == null)
             throw new StackOverflowError();
 
